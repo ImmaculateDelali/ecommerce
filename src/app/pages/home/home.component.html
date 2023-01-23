@@ -1,0 +1,101 @@
+ <!-- ======= Why Us Section ======= -->
+ <section id="hero">
+    <div class="hero-container">
+      <h1>Dees <strong><span style="color:var(--primary-color)">Gallerium</span></strong></h1>
+      <h2>Bad hair day? <br>
+    We dont have time for that</h2>
+      <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
+    </div>
+  </section><!-- End Hero -->
+ 
+ <section id="why-us" class="why-us">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-5" data-aos="fade-up">
+          <div class="content">
+            <h3>Why Choose Dees Gallerium</h3>
+            <p>
+            We dont only make wigs for you, we also invest 5% of profit into providing wigs for women with cancer
+            </p>
+           
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-7 d-flex">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Revamping</h4>
+                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Machine and hand stitching</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-images"></i>
+                  <h4>Installations</h4>
+                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <!-- <div class="container product-list mt-4 mb-4">
+          <h3>Our Products</h3>
+          <a routerLink="products" class="ViewMoreBtn" ><i class="bi bi-arrow-down-right"></i> View more</a>
+          <div class="row">
+          <div class="col-lg-3" *ngFor = "let product of products; index as i"> 
+              <div class="product-item" *ngIf = "i <=3">
+                  <span class="top-sale">top sale</span>
+                  <ul class="product-icon-top">
+                      <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <a href="single-shop.html" class="product-img img-fliud"><img [src]="product.Productimg" alt="product"></a>
+                  <div class="product-item-cover">
+                      <div class="price-cover">
+                          <div class="new-price">{{product.ProductPrice | currency:'GH$'}}</div>
+                          <!-- <div class="old-price">$1.799</div> -->
+                      <!-- </div>
+                      <h6 class="prod-title"><a >{{product.ProductName}} </a></h6>
+                      <a class="btn" [routerLink]="['/products',product.id]" class="btn btn btn-outline-warning btn-lg banner-btn">Buy Now</a>
+                  </div>
+                  <!-- <div class="prod-info">
+                      <ul class="prod-list">
+                           {{product.ProductSize}} 
+                          {{product.Productinfo}}
+                      </ul>
+                  </div> -->
+          <!-- </div>
+        </div>
+          </div>
+      </div> --> 
+
+      <div class="container mt-4 mb-4">
+        <h3>Our Products</h3>
+        <div class="row">
+          <div class="col-lg-3 mt-3"*ngFor = "let product of products; index as i">
+            <div class="productbox" *ngIf = "i <=3">
+              <img src="{{product.Productimg}}"/>
+              <h1>{{product.ProductName}}</h1>
+              <p>{{product.ProductPrice| currency: 'GH$'}}</p>
+              <a class="btn" [routerLink]="['/products',product.id]" class="btn btn btn-outline-warning btn-lg banner-btn">Buy Now</a>
+            </div>
+          </div>
+          <a routerLink="products" class="ViewMoreBtn" ><i class="bi bi-arrow-down-right"></i> View more</a>
+
+        </div>
+
+      </div>
+    
+      </div>
+    </div>
+  </section><!-- End Why Us Section -->

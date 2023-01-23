@@ -1,0 +1,24 @@
+ <div class="shop-banner">
+<img  class="shop-banner-img "src="\assets\img\wigtools.webp" alt="" >
+</div>  
+
+<div class="container mt-4 mb-4">
+    <h3>Our Products</h3>
+    <div class="row">
+      <div class="col-lg-3 mt-3"*ngFor = "let product of products; index as i">
+        <div class="productbox">
+          <img src="{{product.Productimg}}"/>
+          <h1>{{product.ProductName}}</h1>
+          <p>{{product.Productinfo}}</p>
+          <p>{{product.ProductPrice| currency: 'GH$'}}</p>
+          <a class="btn" [routerLink]="['/products',product.id]" class="btn btn btn-outline-warning btn-lg banner-btn">Buy Now</a>
+        </div>
+        <a class="btn" (click)="addToCart(product)" class="btn btn btn-outline-warning btn-lg banner-btn">Add to cart</a>
+
+      </div>
+</div>
+</div>
+
+
+
+     

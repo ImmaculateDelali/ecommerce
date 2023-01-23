@@ -1,0 +1,20 @@
+.nav-item{
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+  }
+  
+  .nav-link.active-link{
+    color: var(--primary-color);
+  }
+  
+  .nav-link {
+    color: black;
+   
+  }
+  
+  
+  li{
+    list-style-type: none;
+  }

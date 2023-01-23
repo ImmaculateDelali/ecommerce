@@ -1,0 +1,17 @@
+.productbox{
+    padding: 10px 5px;
+  }
+
+  .productbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .productbox h1{
+    font-size: 18px;
+    margin-top: 10px;
+
+  }
+  
